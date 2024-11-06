@@ -1,21 +1,24 @@
-"use client";
-import React, { useEffect, useState } from "react";
+import Link from "next/link";
 
 const HomePage = () => {
-  const [contador, setContador] = useState(0);
-  useEffect(() => {
-    console.log(contador);
-  }, [contador]);
-
   return (
-    <div className="flex flex-col min-h-screen justify-center items-center gap-1.5">
+    <div className="flex flex-col min-h-screen justify-center items-center gap-3">
       <h1 className="text-4xl">Eddy!!</h1>
-      {/* <section>{contador}</section>
-      <section>
-        <button className="btn" onClick={() => setContador((prev) => prev + 1)}>
-          Sumar
-        </button>
-      </section> */}
+      <ul className="flex gap-5">
+        <li className=""></li>
+      </ul>
+      <ul className="menu lg:menu-horizontal bg-base-200 rounded-box">
+        <li>
+          <details>
+            <summary>Semana 1</summary>
+            <ul>
+              <li>
+                <Link href={"/contador"}>Contador</Link>
+              </li>
+            </ul>
+          </details>
+        </li>
+      </ul>
     </div>
   );
 };
