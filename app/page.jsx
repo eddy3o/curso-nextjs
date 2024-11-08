@@ -15,6 +15,12 @@ const HomePage = () => {
               <li>
                 <Link href={"/contador"}>Contador</Link>
               </li>
+              <li>
+                <Link href={"/running"}>Running</Link>
+              </li>
+              <li>
+                <Link href={"/consumo"}>Consumo</Link>
+              </li>
             </ul>
           </details>
         </li>
